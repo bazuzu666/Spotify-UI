@@ -1,0 +1,45 @@
+#sticky-footer {
+    flex-shrink: none;
+  }
+
+
+  
+  /* GLOBAL CSS */
+
+  body{
+    color: #b3b3b3;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .spotifyFont{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: .015em;
+    font-weight: bold;
+
+  }
+ 
+  .globalCont{
+    min-height: 100%;
+    width: 100%;
+    
+  }
+
+
+
+
+/* LATERAL MENU */
+
+  .myNav{
+    width:230px;
+    height:100vh;
+   position: absolute;
+   top:0;
+   left:0; 
+   background-color: rgba(0,0,0);
+
+  }
+
+  a:hover{
+      color: white;
+  }
