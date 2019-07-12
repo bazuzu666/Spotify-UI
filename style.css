@@ -13,9 +13,6 @@
     color: #b3b3b3;
     font-family: 'Montserrat', sans-serif;
     width:100vw;
-    height: 100vh;
-    padding:0;
-    margin:0;
     background-image: linear-gradient(to right bottom, rgb(38, 77, 115), rgb(0, 0, 0)), linear-gradient(transparent, rgb(0, 0, 0) 70%);
 
   }
@@ -28,29 +25,98 @@
     font-weight: bold;
 
   }
- 
-  /* .mega-container{
-    height:100vh;
-    width: 100%;
-    
+
+
+  /* hover play effect */
+  /* .wrap1{
+    position: relative;
+    width: 95%;
+  } */
+
+  .image {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
   }
-
-
- */
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .media-obj:hover .image {
+    opacity: 0.3;
+    cursor:pointer;
+  }
+  
+  .media-obj:hover .middle {
+    opacity: 1;
+    cursor:pointer;
+  }
+  
 
 /* LATERAL MENU */
 
   .myNav{
    width:230px;
-   height: 86vh;
+   height:100%;
    position: absolute;
    top:0;
    left:0; 
    background-color: rgba(0,0,0);
+  
 
   }
 
-  /* links */
+  .myLogin {
+	background-color:#191b1b;
+	border-radius:50px;
+	border:0.133rem solid #adffe5;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:13px;
+	font-weight:bold;
+	padding:7px 76px;
+	text-decoration:none;
+}
+.myLogin:hover {
+    background-color: #fff;
+    color:black;
+}
+.myLogin:active {
+	position:relative;
+	top:1px;
+}
+.mySignup {
+	background-color:#ffffff;
+	border-radius:50px;
+	border:2px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-size:13px;
+	font-weight:bold;
+	padding:7px 72px;
+	text-decoration:none;
+}
+
+.mySignup:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+
+  /* LINKS ******************************** */
   a, a:focus, a:hover {
     text-decoration: none;
 }
@@ -67,18 +133,16 @@ a:hover{
 }
 
 
-  /* main content */
+  /* main content *************************** */
   .main-view{
-      position: relative;
       margin-left:245px;
-      padding: 0 32px;
+      padding: 0 50px;
       max-width: 1480px;
-      height: 70vh;
-
+    /*   margin-bottom: 20px; */
   }
 
   .main-albums-container{
-      padding: 10px 20px 10px 100px;
+      padding: 10px 20px 30px 100px;
   }
 
 /* TOP MENU */
@@ -117,24 +181,32 @@ a:hover{
 
   .media-obj{
     position: relative;
-    padding-bottom: 2.5em;
+   /*  padding-bottom: 2.5em; */
   }
   
   .album-label{
-      font-size: 18px;
-      font-weight: bolder;
+      font-size: 13.5px;
+      font-weight: 590;
+      font-weight: bold;
       color: #fff;
   }
 
   /* footer */
-  footer {
+  .player {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  height:13vh;
+  height:12vh;
   background-color: red;
   color: white;
   text-align: center;
-
+  z-index: 1;
   }
+
+  .space{
+    display: inline-block;
+    width: 33%;
+    border: 1px solid black;
+  }
+ 
