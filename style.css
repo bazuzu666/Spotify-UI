@@ -1,6 +1,9 @@
-#sticky-footer {
-    flex-shrink: none;
-  }
+/* html {
+    position: relative;
+    min-height: 100vh;
+  } */
+
+  
 
 
   
@@ -11,8 +14,8 @@
     font-family: 'Montserrat', sans-serif;
     width:100vw;
     height: 100vh;
-    margin:0;
     padding:0;
+    margin:0;
     background-image: linear-gradient(to right bottom, rgb(38, 77, 115), rgb(0, 0, 0)), linear-gradient(transparent, rgb(0, 0, 0) 70%);
 
   }
@@ -26,20 +29,20 @@
 
   }
  
-  .mega-container{
+  /* .mega-container{
     height:100vh;
     width: 100%;
     
   }
 
 
-
+ */
 
 /* LATERAL MENU */
 
   .myNav{
    width:230px;
-   height: 100%;
+   height: 86vh;
    position: absolute;
    top:0;
    left:0; 
@@ -66,9 +69,11 @@ a:hover{
 
   /* main content */
   .main-view{
+      position: relative;
       margin-left:245px;
       padding: 0 32px;
       max-width: 1480px;
+      height: 70vh;
 
   }
 
@@ -119,4 +124,17 @@ a:hover{
       font-size: 18px;
       font-weight: bolder;
       color: #fff;
+  }
+
+  /* footer */
+  footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height:13vh;
+  background-color: red;
+  color: white;
+  text-align: center;
+
   }
