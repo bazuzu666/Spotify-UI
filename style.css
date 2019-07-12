@@ -9,7 +9,14 @@
   body{
     color: #b3b3b3;
     font-family: 'Montserrat', sans-serif;
+    width:100vw;
+    height: 100vh;
+    margin:0;
+    padding:0;
+    background-image: linear-gradient(to right bottom, rgb(38, 77, 115), rgb(0, 0, 0)), linear-gradient(transparent, rgb(0, 0, 0) 70%);
+
   }
+
 
   .spotifyFont{
     font-size: 14px;
@@ -19,8 +26,8 @@
 
   }
  
-  .globalCont{
-    min-height: 100%;
+  .mega-container{
+    height:100vh;
     width: 100%;
     
   }
@@ -31,8 +38,8 @@
 /* LATERAL MENU */
 
   .myNav{
-    width:230px;
-    height:100vh;
+   width:230px;
+   height: 100%;
    position: absolute;
    top:0;
    left:0; 
@@ -40,6 +47,76 @@
 
   }
 
-  a:hover{
-      color: white;
+  /* links */
+  a, a:focus, a:hover {
+    text-decoration: none;
+}
+
+a{
+    color: #b3b3b3;
+}
+
+a:hover{
+    color:white;
+}
+.activeLink{
+    color:#fff;
+}
+
+
+  /* main content */
+  .main-view{
+      margin-left:245px;
+      padding: 0 32px;
+      max-width: 1480px;
+
+  }
+
+  .main-albums-container{
+      padding: 10px 20px 10px 100px;
+  }
+
+/* TOP MENU */
+  .topMenu{
+      margin:0 auto;
+      width:100%;
+  }
+
+  .listMenu{
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+  }
+  .listTopItem{
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: .015em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: .16em;
+    margin: 10px;
+    padding: 5px 10px;
+  }
+
+
+  /* ALMUBS */
+
+  .header{
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -.005em;
+    color: #fff;
+    text-transform: none;
+    margin: 24px 0;
+    font-weight: 900;
+  }
+
+  .media-obj{
+    position: relative;
+    padding-bottom: 2.5em;
+  }
+  
+  .album-label{
+      font-size: 18px;
+      font-weight: bolder;
+      color: #fff;
   }

@@ -13,41 +13,36 @@
 
 <body>
 
-
-
-
-    <!-- <div class="myNav">
-        <nav class="bg-dark">
-      <div class="header">
-            <a class="navbar-brand" href="#"> </a>
-      </div>
-        <ul class="nav d-flex flex-column">
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">Active</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
-              </ul>
-  </nav>
-</div>
-     -->
-     <div class="globalCont">
+    <div class="mega-container">
     <div class="myNav">
-        <nav class="navbar navbar-expand-lg navbar-dark flex-column align-items-start">
-            <a class="navbar-brand py-4 pl-2" href="#"><img src="assets/logo/Spotify_Logo_RGB_White.png" width="130px" height="40px"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <nav class="navbar navbar-expand-lg navbar-dark flex-column justify-content-between align-items-start h-100">
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div>
+                <a class="navbar-brand py-4 pl-2" href="#"><img src="assets/logo/Spotify_Logo_RGB_White.png"
+                        width="130px" height="40px"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav pl-1 mr-auto flex-column">
+                        <li class="nav-item spotifyFont">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item spotifyFont">
+                            <a class="nav-link" href="#">Search</a>
+                        </li>
+                        <li class="nav-item spotifyFont">
+                            <a class="nav-link" href="#">Your Library</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div><!-- END NEW WRAP -->
+            <div>
                 <ul class="navbar-nav pl-1 mr-auto flex-column">
                     <li class="nav-item spotifyFont">
                         <a class="nav-link active" href="#">Home</a>
@@ -55,27 +50,169 @@
                     <li class="nav-item spotifyFont">
                         <a class="nav-link" href="#">Search</a>
                     </li>
-                    <li class="nav-item spotifyFont">
-                        <a class="nav-link" href="#">Your Library</a>
-                    </li>
                 </ul>
-               
-                </div>
-                <div class="d-flex align-items-end justify-content-end">
-                        <ul class="navbar-nav pl-1 mr-auto flex-column">
-                                <li class="nav-item spotifyFont">
-                                    <a class="nav-link active" href="#">Home</a>
-                                </li>
-                                <li class="nav-item spotifyFont">
-                                    <a class="nav-link" href="#">Search</a>
-                                </li>
-                        </ul>
             </div>
         </nav>
     </div>
-</div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-view">
+        <!-- top menu -->
+        <div class="topMenu">
+            <div class="row">
+                <div class="col-12 listMenu">
+
+                    <ul class="list-inline text-center ">
+                        <li class="list-inline-item ">
+                            <div class="listTopItem">
+                                <a aria-current="page" class="activeLink" href="#">Trending</a>
+                            </div>
+                        </li>
+                        <li class="list-inline-item">
+                            <div class="listTopItem">
+                                <a href="#">Podcast</a>
+                            </div>
+                        </li>
+                        <li class="list-inline-item">
+                            <div class="listTopItem">
+                                <a href="#">Moods And Genres</a>
+                            </div>
+                        </li>
+                        <li class="list-inline-item">
+                            <div class="listTopItem">
+                                <a href="#">NewReleases</a>
+                            </div>
+                        </li>
+                        <li class="list-inline-item">
+                            <div class="listTopItem">
+                                <a href="#">Discover</a>
+                            </div>
+                        </li>
+                    </ul>
 
 
+
+                </div>
+
+            </div>
+        </div>
+        <div class="main-albums-container">
+            <section role="throwback">
+                <div>
+                    <h1 class="header">#THROWBACKTURSDAY</h1>
+                </div>
+                <div class="row no-gutters">
+
+                    <div class="col-xs-6 col-sm-3 col-md-2">
+                        <div class="media-obj text-center" style="max-width: 300px">
+                            <img src="assets/artworks/VIRAL_GLOBAL_DEFAULT.jpg" width="200px" height="200px">
+
+                            <div class="py-2">
+                                <h5 class="album-label">prova</h5>
+                            </div>
+                        </div><!-- End of Media Obj -->
+                    </div><!-- End of col -->
+                    <div class="col-xs-6 col-sm-3 col-md-2">
+                        <div class="media-obj text-center" style="max-width: 300px">
+                            <img src="assets/artworks/VIRAL_GLOBAL_DEFAULT.jpg" width="200px" height="200px">
+
+                            <div class="py-2">
+                                <h5 class="album-label">prova</h5>
+                            </div>
+                        </div><!-- End of Media Obj -->
+                    </div><!-- End of col -->
+                    <div class="col-xs-6 col-sm-3 col-md-2">
+                        <div class="media-obj text-center" style="max-width: 300px">
+                            <img src="assets/artworks/VIRAL_GLOBAL_DEFAULT.jpg" width="200px" height="200px">
+
+                            <div class="py-2">
+                                <h5 class="album-label">prova</h5>
+                            </div>
+                        </div><!-- End of Media Obj -->
+                    </div><!-- End of col -->
+                    <div class="col-xs-6 col-sm-3 col-md-2">
+                        <div class="media-obj text-center" style="max-width: 300px">
+                            <img src="assets/artworks/VIRAL_GLOBAL_DEFAULT.jpg" width="200px" height="200px">
+
+                            <div class="py-2">
+                                <h5 class="album-label">prova</h5>
+                            </div>
+                        </div><!-- End of Media Obj -->
+                    </div><!-- End of col -->
+                    <div class="col-xs-6 col-sm-3 col-md-2">
+                        <div class="media-obj text-center" style="max-width: 300px">
+                            <img src="assets/artworks/VIRAL_GLOBAL_DEFAULT.jpg" width="200px" height="200px">
+
+                            <div class="py-2">
+                                <h5 class="album-label">prova</h5>
+                            </div>
+                        </div><!-- End of Media Obj -->
+                    </div><!-- End of col -->
+                    <div class="col-xs-6 col-sm-3 col-md-2">
+                        <div class="media-obj text-center" style="max-width: 300px">
+                            <img src="assets/artworks/VIRAL_GLOBAL_DEFAULT.jpg" width="200px" height="200px">
+
+                            <div class="py-2">
+                                <h5 class="album-label">prova</h5>
+                            </div>
+                        </div><!-- End of Media Obj -->
+                    </div><!-- End of col -->
+                </div><!-- END OF FIRST ROW -->
+
+
+            </section><!-- End of THrowBack Playlist -->
+
+
+
+            <!-- TOP WORLD PLAYLIST -->
+            <section role="topPlaylist">
+                <div>
+                    <h1 class="header">Classifiche</h1>
+                </div>
+                <div class="row no-gutters">
+
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+                        <div class="media-obj text-center" style="max-width: 300px">
+                            <img src="assets/artworks/VIRAL_GLOBAL_DEFAULT.jpg" width="200px" height="200px">
+
+                            <div class="py-2">
+                                <h5 class="album-label">prova</h5>
+                            </div>
+                        </div><!-- End of Media Obj -->
+                    </div><!-- End of col -->
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+                        <div class="media-obj text-center" style="max-width: 300px">
+                            <img src="assets/artworks/VIRAL_GLOBAL_DEFAULT.jpg" width="200px" height="200px">
+
+                            <div class="py-2">
+                                <h5 class="album-label">prova</h5>
+                            </div>
+                        </div><!-- End of Media Obj -->
+                    </div><!-- End of col -->
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+                        <div class="media-obj text-center" style="max-width: 300px">
+                            <img src="assets/artworks/VIRAL_GLOBAL_DEFAULT.jpg" width="200px" height="200px">
+
+                            <div class="py-2">
+                                <h5 class="album-label">prova</h5>
+                            </div>
+                        </div><!-- End of Media Obj -->
+                    </div><!-- End of col -->
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+                        <div class="media-obj text-center" style="max-width: 300px">
+                            <img src="assets/artworks/VIRAL_GLOBAL_DEFAULT.jpg" width="200px" height="200px">
+
+                            <div class="py-2">
+                                <h5 class="album-label">prova</h5>
+                            </div>
+                        </div><!-- End of Media Obj -->
+                    </div><!-- End of col -->
+                </div><!-- end of row -->
+            </section><!-- end of section classifiche -->
+        </div><!-- End of album container -->
+    </div><!-- end of main-view -->
+
+</div> 
 
 
 
