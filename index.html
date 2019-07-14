@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Hello, world!</title>
+    <title>Homepage</title>
 
     <style>
       nav {
@@ -29,16 +29,19 @@
 
       #parent{
         /* height: 80vh; */
+        position:relative;
         height: 100%;
         overflow-y: scroll;
-        overflow-x:hidden;
+        overflow-x: hidden;
         
       }
      .myheight{
         height: calc(100% - 100px);
       }
-      #myheight nav{
+      .mywidth nav{
           width:85%;
+          padding: 20px 0;
+          margin:0;
       }
 
       
@@ -58,10 +61,10 @@
    
 
         <div class="container-fluid px-0 h-100">
-      <div class="row myheight">
-          <div class="col-md-2 h-100">
+      <div class="row myheight mx-0 w-100">
+          <div class="col-md-2 pl-0 h-100">
               <!--  <div class=" h-100"> -->
-                    <nav class="navbar navbar-expand-lg navbar-dark d-flex flex-column justify-content-between align-items-start h-100">
+                    <nav class="navbar navbar-expand-lg navbar-dark d-flex flex-column justify-content-between align-items-start h-100 mywidth">
 
                             <div>
                                 <a class="navbar-brand py-4 pl-2" href="#"><img src="assets/logo/Spotify_Logo_RGB_White.png"
@@ -107,7 +110,7 @@
                         </nav>
               <!--  </div>  -->
           </div><!-- END OF COL -->
-          <div class="col-md-10 w-100" id="parent">
+          <div class="col-md-10 px-0" id="parent">
                 <div class="topMenu">
                         <div class="row">
                             <div class="col-12 listMenu">

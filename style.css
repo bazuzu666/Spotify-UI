@@ -16,8 +16,7 @@
     height:100vh;
     background-image: linear-gradient(to right bottom, rgb(38, 77, 115), rgb(0, 0, 0)), linear-gradient(transparent, rgb(0, 0, 0) 70%);
     overflow:hidden;
-   
-
+    margin:0;
   }
 
 
