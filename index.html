@@ -1,293 +1,372 @@
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="https://kit.fontawesome.com/6068c20ad9.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Spotify Home Page</title>
+    <title>Hello, world!</title>
 
-</head>
+    <style>
+      nav {
+        background-color: #000;
+      
+      }
 
-<body>
+      .footer{
+        position:sticky;
+        bottom:0;
+        background-color: green;
+        color: white;
+        text-align: center;
+        line-height: 100px;
+        height:100px;
+      }
 
+      #parent{
+        /* height: 80vh; */
+        height: 100%;
+        overflow-y: scroll;
+        overflow-x:hidden;
+        
+      }
+     .myheight{
+        height: calc(100% - 100px);
+      }
+      #myheight nav{
+          width:85%;
+      }
 
-    <div class="myNav">
-        <nav class="navbar navbar-expand-lg navbar-dark flex-column justify-content-between align-items-start h-100">
+      
+/*       .fixedtop {
+  display: flex;
+  position: sticky;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  overflow-y: 
+} */
+    </style>
+  </head>
+  <body>
+      
+   
 
-            <div>
-                <a class="navbar-brand py-4 pl-2" href="#"><img src="assets/logo/Spotify_Logo_RGB_White.png"
-                        width="130px" height="40px"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+        <div class="container-fluid px-0 h-100">
+      <div class="row myheight">
+          <div class="col-md-2 h-100">
+              <!--  <div class=" h-100"> -->
+                    <nav class="navbar navbar-expand-lg navbar-dark d-flex flex-column justify-content-between align-items-start h-100">
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav pl-1 mr-auto flex-column">
-                        <li class="nav-item pt-2 py-1">
-                            <a class="nav-link spotifyFont active" href="#"> <i class="fas fa-home pr-1"></i> Home</a>
-                        </li>
-                        <li class="nav-item  py-1">
-                            <a class="nav-link spotifyFont" href="#"><i class="fas fa-search pr-1"></i> Search</a>
-                        </li>
-                        <li class="nav-item spotifyFont py-1">
-                            <a class="nav-link spotifyFont" href="#"> <i class="fas fa-list-ul pr-1"></i> Your  Library</a>
-                        </li>
-                    </ul>
+                            <div>
+                                <a class="navbar-brand py-4 pl-2" href="#"><img src="assets/logo/Spotify_Logo_RGB_White.png"
+                                        width="130px" height="40px"></a>
+                                 <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                                    aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+                                    <ul class="navbar-nav pl-1 mr-auto flex-column">
+                                        <li class="nav-item pt-2 py-1">
+                                            <a class="nav-link spotifyFont active" href="#"> <i class="fas fa-home pr-1"></i> Home</a>
+                                        </li>
+                                        <li class="nav-item  py-1">
+                                            <a class="nav-link spotifyFont" href="#"><i class="fas fa-search pr-1"></i> Search</a>
+                                        </li>
+                                        <li class="nav-item spotifyFont py-1">
+                                            <a class="nav-link spotifyFont" href="#"> <i class="fas fa-list-ul pr-1"></i> Your  Library</a>
+                                        </li>
+                                    </ul>
+                
+                                </div> <!-- end of collapse -->
+                
+                            </div><!-- END NEW WRAP -->
+                            <div class="align-self-center w-100 ">
+                                <ul class="navbar-nav pl-1 flex-column align-items-center">
+                
+                                    <li class="py-2 pr-2">
+                                        <button class="mySignup">SIGNUP</button>
+                                    </li>
+                
+                                    <li class="py-2 pr-2">
+                                        <button class="myLogin">LOGIN</button>
+                                    </li>
+                                    <li class="py-2 pr-3 text-center">
+                                        <p>Cookie Policy   |   Privacy</p>
+                                    </li>
+                                </ul>
+                
+                            </div>
+                        </nav>
+              <!--  </div>  -->
+          </div><!-- END OF COL -->
+          <div class="col-md-10 w-100" id="parent">
+                <div class="topMenu">
+                        <div class="row">
+                            <div class="col-12 listMenu">
+            
+                                <ul class="list-inline text-center ">
+                                    <li class="list-inline-item ">
+                                        <div class="listTopItem">
+                                            <a aria-current="page" class="activeLink" href="#">Trending</a>
+                                        </div>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <div class="listTopItem">
+                                            <a href="#">Podcast</a>
+                                        </div>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <div class="listTopItem">
+                                            <a href="#">Moods And Genres</a>
+                                        </div>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <div class="listTopItem">
+                                            <a href="#">NewReleases</a>
+                                        </div>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <div class="listTopItem">
+                                            <a href="#">Discover</a>
+                                        </div>
+                                    </li>
+                                </ul>
+            
+            
+            
+                            </div>
+            
+                        </div>
+                    </div>
+                    <div class="main-albums-container">
+                        <section role="throwback">
+                            <div>
+                                <h1 class="header">#THROWBACKTURSDAY</h1>
+                            </div>
+                            <div class="row no-gutters mb-5">
+            
+                                <div class="col-xs-6 col-sm-3 col-md-2 pb-4">
+                                    <div class="media-obj text-center">
+                                        <img class="image" src="assets/artworks/1f4fe0c4fa3a21e56c82b19b6865f262ad928249.jpg"
+                                            width="200px" height="200px">
+                                        <div class="middle">
+                                            <img src="assets/playerButtons/Play.png" width="40px">
+                                        </div>
+                                    </div><!-- End of Media Obj -->
+                                    <div class="text-center py-2">
+                                        <h5 class="album-label pt-1">Italian Karaoke</h5>
+                                    </div>
+            
+                                </div><!-- End of col -->
+                                <div class="col-xs-6 col-sm-3 col-md-2">
+                                    <div class="media-obj text-center" style="max-width: 300px">
+                                        <img class="image" src="assets/artworks/67ff6716a77df310f9a7ae382e0ae50e0f5bf57e.jpg"
+                                            width="200px" height="200px">
+                                        <div class="middle">
+                                            <img src="assets/playerButtons/Play.png" width="40px">
+                                        </div>
+                                    </div><!-- End of Media Obj -->
+                                    <div class="text-center py-2">
+                                        <h5 class="album-label pt-1">00's Italy</h5>
+                                    </div>
+                                </div><!-- End of col -->
+                                <div class="col-xs-6 col-sm-3 col-md-2">
+                                    <div class="media-obj text-center" style="max-width: 300px">
+                                        <img class="image" src="assets/artworks/8ffcdd34eca189c75affa2325ef19219c6374333.jpg"
+                                            width="200px" height="200px">
+                                        <div class="middle">
+                                            <img src="assets/playerButtons/Play.png" width="40px">
+                                        </div>
+                                    </div><!-- End of Media Obj -->
+                                    <div class="text-center py-2">
+                                        <h5 class="album-label pt-1">Happy Hour</h5>
+                                    </div>
+                                </div><!-- End of col -->
+                                <div class="col-xs-6 col-sm-3 col-md-2">
+                                    <div class="media-obj text-center" style="max-width: 300px">
+                                        <img class="image" src="assets/artworks/b221f0f6742f3c20f36fa00a1f2161551ecae50f.jpg"
+                                            width="200px" height="200px">
+                                        <div class="middle">
+                                            <img src="assets/playerButtons/Play.png" width="40px">
+                                        </div>
+                                    </div><!-- End of Media Obj -->
+                                    <div class="text-center py-2">
+                                        <h5 class="album-label pt-1">Favourite's Italian Rotation</h5>
+                                    </div>
+                                </div><!-- End of col -->
+                                <div class="col-xs-6 col-sm-3 col-md-2">
+                                    <div class="media-obj text-center" style="max-width: 300px">
+                                        <img class="image" src="assets/artworks/e488f79f331bdd6388449565739ee9d194a99c8d.jpg"
+                                            width="200px" height="200px">
+                                        <div class="middle">
+                                            <img src="assets/playerButtons/Play.png" width="40px">
+                                        </div>
+                                    </div><!-- End of Media Obj -->
+                                    <div class="text-center py-2">
+                                        <h5 class="album-label pt-1">I love Hip-Hop '90</h5>
+                                    </div>
+                                </div><!-- End of col -->
+                                <div class="col-xs-6 col-sm-3 col-md-2">
+                                    <div class="media-obj text-center" style="max-width: 300px">
+                                        <img class="image" src="assets/artworks/f6fdf56dc0f8dac811f9a063837700ed2265061b.jpg"
+                                            width="200px" height="200px">
+                                        <div class="middle">
+                                            <img src="assets/playerButtons/Play.png" width="40px">
+                                        </div>
+                                    </div><!-- End of Media Obj -->
+                                    <div class="text-center py-2">
+                                        <h5 class="album-label pt-1">Lyricists</h5>
+                                    </div>
+                                </div><!-- End of col -->
+                            </div><!-- END OF FIRST ROW -->
+            
+            
+                        </section><!-- End of THrowBack Playlist -->
+            
+            
+            
+                        <!-- TOP WORLD PLAYLIST -->
+                        <section class="mb-5 mb-5 mb-5 my-3" role="topPlaylist">
+                            <div>
+                                <h1 class="header">Classifiche</h1>
+                            </div>
+                            <div class="row no-gutters">
+            
+                                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+                                    <div class="media-obj text-center" style="max-width: 300px">
+                                        <img class="image" src="assets/artworks/VIRAL_GLOBAL_DEFAULT.jpg" width="200px"
+                                            height="200px">
+                                        <div class="middle">
+                                            <img src="assets/playerButtons/Play.png" width="40px">
+                                        </div>
+                                    </div><!-- End of Media Obj -->
+                                    <div class="text-center py-2">
+                                        <h5 class="album-label pt-1">Viral 50 - Global </h5>
+                                    </div>
+                                </div><!-- End of col -->
+                                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+                                    <div class="media-obj text-center" style="max-width: 300px">
+                                        <img class="image" src="assets/artworks/VIRAL_IT_DEFAULT.jpg" width="200px" height="200px">
+                                        <div class="middle">
+                                            <img src="assets/playerButtons/Play.png" width="40px">
+                                        </div>
+                                    </div><!-- End of Media Obj -->
+                                    <div class="text-center py-2">
+                                        <h5 class="album-label pt-1">Viral 50 - Italy</h5>
+                                    </div>
+                                </div><!-- End of col -->
+                                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-2 pb-5">
+                                    <div class="media-obj text-center" style="max-width: 300px">
+                                        <img class="image" src="assets/artworks/REGIONAL_GLOBAL_DEFAULT.jpg" width="200px"
+                                            height="200px">
+                                        <div class="middle">
+                                            <img src="assets/playerButtons/Play.png" width="40px">
+                                        </div>
+                                    </div><!-- End of Media Obj -->
+                                    <div class="text-center py-2">
+                                        <h5 class="album-label pt-1">Top 50 - Global</h5>
+                                    </div>
+                                </div><!-- End of col -->
+                                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+                                    <div class="media-obj text-center" style="max-width: 300px">
+                                        <img class="image" src="assets/artworks/REGIONAL_IT_DEFAULT.jpg" width="200px"
+                                            height="200px">
+                                        <div class="middle">
+                                            <img src="assets/playerButtons/Play.png" width="40px">
+                                        </div>
+                                    </div><!-- End of Media Obj -->
+                                    <div class="text-center py-2">
+                                        <h5 class="album-label pt-1">Top 50 - Italy</h5>
+                                    </div>
+                                </div><!-- End of col -->
+                            </div><!-- end of row -->
+                        </section><!-- end of section classifiche -->
 
-                </div>
-
-            </div><!-- END NEW WRAP -->
-            <div class="align-self-center w-100 ">
-                <ul class="navbar-nav pl-1 flex-column align-items-center">
-
-                    <li class="py-2 pr-2">
-                        <button class="mySignup">SIGNUP</button>
-                    </li>
-
-                    <li class="py-2 pr-2">
-                        <button class="myLogin">LOGIN</button>
-                    </li>
-                    <li class="py-2 pr-3 text-center">
-                        <p>Cookie Policy   |   Privacy</p>
-                    </li>
-                </ul>
-
-            </div>
-        </nav>
+                        <section class="mb-5 mb-5 mb-5 my-3" role="topPlaylist">
+                                <div>
+                                    <h1 class="header">Classifiche</h1>
+                                </div>
+                                <div class="row no-gutters">
+                
+                                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+                                        <div class="media-obj text-center" style="max-width: 300px">
+                                            <img class="image" src="assets/artworks/VIRAL_GLOBAL_DEFAULT.jpg" width="200px"
+                                                height="200px">
+                                            <div class="middle">
+                                                <img src="assets/playerButtons/Play.png" width="40px">
+                                            </div>
+                                        </div><!-- End of Media Obj -->
+                                        <div class="text-center py-2">
+                                            <h5 class="album-label pt-1">Viral 50 - Global </h5>
+                                        </div>
+                                    </div><!-- End of col -->
+                                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+                                        <div class="media-obj text-center" style="max-width: 300px">
+                                            <img class="image" src="assets/artworks/VIRAL_IT_DEFAULT.jpg" width="200px" height="200px">
+                                            <div class="middle">
+                                                <img src="assets/playerButtons/Play.png" width="40px">
+                                            </div>
+                                        </div><!-- End of Media Obj -->
+                                        <div class="text-center py-2">
+                                            <h5 class="album-label pt-1">Viral 50 - Italy</h5>
+                                        </div>
+                                    </div><!-- End of col -->
+                                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-2 pb-5">
+                                        <div class="media-obj text-center" style="max-width: 300px">
+                                            <img class="image" src="assets/artworks/REGIONAL_GLOBAL_DEFAULT.jpg" width="200px"
+                                                height="200px">
+                                            <div class="middle">
+                                                <img src="assets/playerButtons/Play.png" width="40px">
+                                            </div>
+                                        </div><!-- End of Media Obj -->
+                                        <div class="text-center py-2">
+                                            <h5 class="album-label pt-1">Top 50 - Global</h5>
+                                        </div>
+                                    </div><!-- End of col -->
+                                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+                                        <div class="media-obj text-center" style="max-width: 300px">
+                                            <img class="image" src="assets/artworks/REGIONAL_IT_DEFAULT.jpg" width="200px"
+                                                height="200px">
+                                            <div class="middle">
+                                                <img src="assets/playerButtons/Play.png" width="40px">
+                                            </div>
+                                        </div><!-- End of Media Obj -->
+                                        <div class="text-center py-2">
+                                            <h5 class="album-label pt-1">Top 50 - Italy</h5>
+                                        </div>
+                                    </div><!-- End of col -->
+                                </div><!-- end of row -->
+                            </section><!-- end of section classifiche -->
+                    </div><!-- End of album container -->
+          </div>
+      </div>
+      <footer class="row footer">
+            <div class="col-12 ">This is my footer</div>
+     </footer>
     </div>
+   
 
-    <!-- MAIN CONTENT -->
-    <div class="main-view">
-        <!-- top menu -->
-        <div class="topMenu">
-            <div class="row">
-                <div class="col-12 listMenu">
+      
+    
+  
+    
 
-                    <ul class="list-inline text-center ">
-                        <li class="list-inline-item ">
-                            <div class="listTopItem">
-                                <a aria-current="page" class="activeLink" href="#">Trending</a>
-                            </div>
-                        </li>
-                        <li class="list-inline-item">
-                            <div class="listTopItem">
-                                <a href="#">Podcast</a>
-                            </div>
-                        </li>
-                        <li class="list-inline-item">
-                            <div class="listTopItem">
-                                <a href="#">Moods And Genres</a>
-                            </div>
-                        </li>
-                        <li class="list-inline-item">
-                            <div class="listTopItem">
-                                <a href="#">NewReleases</a>
-                            </div>
-                        </li>
-                        <li class="list-inline-item">
-                            <div class="listTopItem">
-                                <a href="#">Discover</a>
-                            </div>
-                        </li>
-                    </ul>
-
-
-
-                </div>
-
-            </div>
-        </div>
-        <div class="main-albums-container">
-            <section role="throwback">
-                <div>
-                    <h1 class="header">#THROWBACKTURSDAY</h1>
-                </div>
-                <div class="row no-gutters mb-5">
-
-                    <div class="col-xs-6 col-sm-3 col-md-2 pb-4">
-                        <div class="media-obj text-center">
-                            <img class="image" src="assets/artworks/1f4fe0c4fa3a21e56c82b19b6865f262ad928249.jpg"
-                                width="200px" height="200px">
-                            <div class="middle">
-                                <img src="assets/playerButtons/Play.png" width="40px">
-                            </div>
-                        </div><!-- End of Media Obj -->
-                        <div class="text-center py-2">
-                            <h5 class="album-label pt-1">Italian Karaoke</h5>
-                        </div>
-
-                    </div><!-- End of col -->
-                    <div class="col-xs-6 col-sm-3 col-md-2">
-                        <div class="media-obj text-center" style="max-width: 300px">
-                            <img class="image" src="assets/artworks/67ff6716a77df310f9a7ae382e0ae50e0f5bf57e.jpg"
-                                width="200px" height="200px">
-                            <div class="middle">
-                                <img src="assets/playerButtons/Play.png" width="40px">
-                            </div>
-                        </div><!-- End of Media Obj -->
-                        <div class="text-center py-2">
-                            <h5 class="album-label pt-1">00's Italy</h5>
-                        </div>
-                    </div><!-- End of col -->
-                    <div class="col-xs-6 col-sm-3 col-md-2">
-                        <div class="media-obj text-center" style="max-width: 300px">
-                            <img class="image" src="assets/artworks/8ffcdd34eca189c75affa2325ef19219c6374333.jpg"
-                                width="200px" height="200px">
-                            <div class="middle">
-                                <img src="assets/playerButtons/Play.png" width="40px">
-                            </div>
-                        </div><!-- End of Media Obj -->
-                        <div class="text-center py-2">
-                            <h5 class="album-label pt-1">Happy Hour</h5>
-                        </div>
-                    </div><!-- End of col -->
-                    <div class="col-xs-6 col-sm-3 col-md-2">
-                        <div class="media-obj text-center" style="max-width: 300px">
-                            <img class="image" src="assets/artworks/b221f0f6742f3c20f36fa00a1f2161551ecae50f.jpg"
-                                width="200px" height="200px">
-                            <div class="middle">
-                                <img src="assets/playerButtons/Play.png" width="40px">
-                            </div>
-                        </div><!-- End of Media Obj -->
-                        <div class="text-center py-2">
-                            <h5 class="album-label pt-1">Favourite's Italian Rotation</h5>
-                        </div>
-                    </div><!-- End of col -->
-                    <div class="col-xs-6 col-sm-3 col-md-2">
-                        <div class="media-obj text-center" style="max-width: 300px">
-                            <img class="image" src="assets/artworks/e488f79f331bdd6388449565739ee9d194a99c8d.jpg"
-                                width="200px" height="200px">
-                            <div class="middle">
-                                <img src="assets/playerButtons/Play.png" width="40px">
-                            </div>
-                        </div><!-- End of Media Obj -->
-                        <div class="text-center py-2">
-                            <h5 class="album-label pt-1">I love Hip-Hop '90</h5>
-                        </div>
-                    </div><!-- End of col -->
-                    <div class="col-xs-6 col-sm-3 col-md-2">
-                        <div class="media-obj text-center" style="max-width: 300px">
-                            <img class="image" src="assets/artworks/f6fdf56dc0f8dac811f9a063837700ed2265061b.jpg"
-                                width="200px" height="200px">
-                            <div class="middle">
-                                <img src="assets/playerButtons/Play.png" width="40px">
-                            </div>
-                        </div><!-- End of Media Obj -->
-                        <div class="text-center py-2">
-                            <h5 class="album-label pt-1">Lyricists</h5>
-                        </div>
-                    </div><!-- End of col -->
-                </div><!-- END OF FIRST ROW -->
-
-
-            </section><!-- End of THrowBack Playlist -->
-
-
-
-            <!-- TOP WORLD PLAYLIST -->
-            <section class="mb-5 mb-5 mb-5 my-3" role="topPlaylist">
-                <div>
-                    <h1 class="header">Classifiche</h1>
-                </div>
-                <div class="row no-gutters">
-
-                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
-                        <div class="media-obj text-center" style="max-width: 300px">
-                            <img class="image" src="assets/artworks/VIRAL_GLOBAL_DEFAULT.jpg" width="200px"
-                                height="200px">
-                            <div class="middle">
-                                <img src="assets/playerButtons/Play.png" width="40px">
-                            </div>
-                        </div><!-- End of Media Obj -->
-                        <div class="text-center py-2">
-                            <h5 class="album-label pt-1">Viral 50 - Global </h5>
-                        </div>
-                    </div><!-- End of col -->
-                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
-                        <div class="media-obj text-center" style="max-width: 300px">
-                            <img class="image" src="assets/artworks/VIRAL_IT_DEFAULT.jpg" width="200px" height="200px">
-                            <div class="middle">
-                                <img src="assets/playerButtons/Play.png" width="40px">
-                            </div>
-                        </div><!-- End of Media Obj -->
-                        <div class="text-center py-2">
-                            <h5 class="album-label pt-1">Viral 50 - Italy</h5>
-                        </div>
-                    </div><!-- End of col -->
-                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-2 pb-5">
-                        <div class="media-obj text-center" style="max-width: 300px">
-                            <img class="image" src="assets/artworks/REGIONAL_GLOBAL_DEFAULT.jpg" width="200px"
-                                height="200px">
-                            <div class="middle">
-                                <img src="assets/playerButtons/Play.png" width="40px">
-                            </div>
-                        </div><!-- End of Media Obj -->
-                        <div class="text-center py-2">
-                            <h5 class="album-label pt-1">Top 50 - Global</h5>
-                        </div>
-                    </div><!-- End of col -->
-                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
-                        <div class="media-obj text-center" style="max-width: 300px">
-                            <img class="image" src="assets/artworks/REGIONAL_IT_DEFAULT.jpg" width="200px"
-                                height="200px">
-                            <div class="middle">
-                                <img src="assets/playerButtons/Play.png" width="40px">
-                            </div>
-                        </div><!-- End of Media Obj -->
-                        <div class="text-center py-2">
-                            <h5 class="album-label pt-1">Top 50 - Italy</h5>
-                        </div>
-                    </div><!-- End of col -->
-                </div><!-- end of row -->
-            </section><!-- end of section classifiche -->
-        </div><!-- End of album container -->
-    </div><!-- end of main-view -->
-
-    <section class="player">
-        <div class="space">
-            <span class="text-muted">just space</span>
-        </div>
-        <div class="space">
-            <span class="text-muted">just space</span>
-        </div>
-        <div class="space">
-            <span class="text-muted">just space</span>
-        </div>
-    </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>
+
+
+
+
