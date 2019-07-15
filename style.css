@@ -15,7 +15,7 @@
     width:100vw;
     height:100vh;
     background-image: linear-gradient(to right bottom, rgb(38, 77, 115), rgb(0, 0, 0)), linear-gradient(transparent, rgb(0, 0, 0) 70%);
-    overflow:hidden;
+     overflow:hidden; 
     margin:0;
   }
 
@@ -64,7 +64,7 @@
 
 
   .myLogin {
-	background-color:#191b1b;
+	background-color:#282828;
 	border-radius:50px;
 	border:0.133rem solid #adffe5;
 	display:inline-block;
@@ -72,7 +72,7 @@
 	color:#ffffff;
 	font-size:13px;
 	font-weight:bold;
-	padding:7px 90px;
+	padding:7px 76px;
 	text-decoration:none;
 }
 .myLogin:hover {
@@ -92,7 +92,7 @@
 	color:#000000;
 	font-size:13px;
 	font-weight:bold;
-	padding:7px 85px;
+	padding:7px 74px;
 	text-decoration:none;
 }
 
@@ -175,21 +175,5 @@ a:hover{
 
 
  
-  /* footer 
-  .player {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height:60px;
-  background-color: red;
-  color: white;
-  text-align: center;
-  }
-
-  .space{
-    display: inline-block;
-    width: 33%;
-    border: 1px solid black;
-  }
+ 
   
