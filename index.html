@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="https://kit.fontawesome.com/6068c20ad9.js"></script>
-
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -65,8 +65,9 @@
 <body>
 
 
-
     <div class="container-fluid px-0 h-100">
+            
+
         <div class="row myheight mx-0 w-100">
             <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2 pl-0 h-100">
                
@@ -80,11 +81,11 @@
                         
                             <ul class="navbar-nav pl-1 mr-auto flex-column">
                                 <li class="nav-item pt-2 py-1">
-                                    <a class="nav-link spotifyFont active" href="#"> <i class="fas fa-home pr-1"></i>
+                                    <a id="home" class="nav-link spotifyFont active" href="#"> <i class="fas fa-home pr-1"></i>
                                         Home</a>
                                 </li>
                                 <li class="nav-item  py-1">
-                                    <a class="nav-link spotifyFont" href="#"><i class="fas fa-search pr-1"></i>
+                                    <a class="nav-link spotifyFont" href="#search"><i class="fas fa-search pr-1"></i>
                                         Search</a>
                                 </li>
                                 <li class="nav-item spotifyFont py-1">
@@ -92,8 +93,6 @@
                                         Library</a>
                                 </li>
                             </ul>
-
-                      
 
                     </div><!-- END NEW WRAP -->
                     <div class="align-self-center w-100 ">
@@ -296,75 +295,28 @@
                             </div><!-- End of col -->
                         </div><!-- end of row -->
                     </section><!-- end of section classifiche -->
-
-                    <section class="mb-5 mb-5 mb-5 my-3" role="topPlaylist">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h1 class=" header">Classifiche</h1>
-                            <a class="d-block d-lg-none listTopItem" href="#">Show More</a>
-                        </div>
-                        <div class="row">
-
-                            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2 col-xl-2 px-2">
-                                <div class="media-obj text-center" style="max-width: 300px">
-                                    <img class="image img-fluid" src="assets/artworks/VIRAL_GLOBAL_DEFAULT.jpg">
-                                    <div class="middle">
-                                        <img src="assets/playerButtons/Play.png" width="40px">
-                                    </div>
-                                </div><!-- End of Media Obj -->
-                                <div class="text-center py-2">
-                                    <h5 class="album-label pt-1">Viral 50 - Global </h5>
-                                </div>
-                            </div><!-- End of col -->
-                            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2 col-xl-2 px-2">
-                                <div class="media-obj text-center" style="max-width: 300px">
-                                    <img class="image img-fluid" src="assets/artworks/VIRAL_IT_DEFAULT.jpg">
-                                    <div class="middle">
-                                        <img src="assets/playerButtons/Play.png" width="40px">
-                                    </div>
-                                </div><!-- End of Media Obj -->
-                                <div class="text-center py-2">
-                                    <h5 class="album-label pt-1">Viral 50 - Italy</h5>
-                                </div>
-                            </div><!-- End of col -->
-                            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2 col-xl-2 px-2">
-                                <div class="media-obj text-center" style="max-width: 300px">
-                                    <img class="image img-fluid" src="assets/artworks/REGIONAL_GLOBAL_DEFAULT.jpg">
-                                    <div class="middle">
-                                        <img src="assets/playerButtons/Play.png" width="40px">
-                                    </div>
-                                </div><!-- End of Media Obj -->
-                                <div class="text-center py-2">
-                                    <h5 class="album-label pt-1">Top 50 - Global</h5>
-                                </div>
-                            </div><!-- End of col -->
-                            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2 col-xl-2 px-2">
-                                <div class="media-obj text-center" style="max-width: 300px">
-                                    <img class="image img-fluid" src="assets/artworks/REGIONAL_IT_DEFAULT.jpg">
-                                    <div class="middle">
-                                        <img src="assets/playerButtons/Play.png" width="40px">
-                                    </div>
-                                </div><!-- End of Media Obj -->
-                                <div class="text-center py-2">
-                                    <h5 class="album-label pt-1">Top 50 - Italy</h5>
-                                </div>
-                            </div><!-- End of col -->
-                        </div><!-- end of row -->
-                    </section><!-- end of section classifiche -->
                 </div><!-- End of album container -->
             </div>
         </div>
         <footer class="row footer">
-            <div class="col-12 ">This is my footer</div>
+            <div class="col-12 ">This is should be a player :)</div>
         </footer>
     </div>
-
-
-
+    <div id="search">
+            <button type="button" class="close">×</button>
+            <form>
+                <input type="search" value="" placeholder="Write an artist/band" />
+                <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+        </div>
+    
+    
 
 
 
 
     <!-- Optional JavaScript -->
+    <script src="searchapi.js"></script>  
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -375,6 +327,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+      
 </body>
 
 </html>
