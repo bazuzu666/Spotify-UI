@@ -18,9 +18,11 @@ window.onload = () => {
   ['click', 'keyup'].forEach(evt => document.querySelector('#search').addEventListener(evt, function (event) {
     if ((event.target.className == 'close') || event.keyCode == 27) {
       document.querySelector('#search').classList.remove('open');
-    } else if (event.target.className == "btn btn-primary") {
+    } else if (event.target.className == "btn btn-primary" || event.keyCode == 13 ) {
       document.querySelector('#search').classList.remove('open');
-      genericSong(document.querySelector('#search > form > input[type="search"]').value);
+      let searchValue = document.querySelector('#search > form > input[type="search"]').value
+     /*  genericSong(document.querySelector('#search > form > input[type="search"]').value); */
+      console.log(searchValue);
     }
   })
   );/* end of foreach */
@@ -30,18 +32,18 @@ window.onload = () => {
 
 var searched = 0;
 function backHome() {
-   console.log(searched);
-    var allSection = document.querySelectorAll(".main-albums-container section");
-   
-    allSection.forEach(sec => {
-      sec.classList.remove("d-none");
-    });
-    if (searched > 0) {
-     for(let i =1; i<= searched; i++){
+  console.log(searched);
+  var allSection = document.querySelectorAll(".main-albums-container section");
+
+  allSection.forEach(sec => {
+    sec.classList.remove("d-none");
+  });
+  if (searched > 0) {
+    for (let i = 1; i <= searched; i++) {
       var lastSection = allSection[allSection.length - i];
       lastSection.parentNode.removeChild(lastSection);
-     }
-    
+    }
+
   }
   searched = 0;
 }
@@ -219,7 +221,6 @@ function getBehemoth() {
 
 
 function genericSong(artist) {
-  console.log(searched);
   var headers = new Headers({
     "X-RapidAPI-Host": "deezerdevs-deezer.p.rapidapi.com",
     "X-RapidAPI-Key": "575de39080mshf1f9cab8127c63fp1bcad8jsn113d9f3f814b"
@@ -228,6 +229,7 @@ function genericSong(artist) {
     method: "GET",
     headers: headers
   };
+  console.log(artist);
   fetch("https://deezerdevs-deezer.p.rapidapi.com/search?q=" + artist, param)
     .then(function (response) {
       if (response.ok) {
