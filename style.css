@@ -14,7 +14,7 @@
     font-family: 'Montserrat', sans-serif;
     width:100vw;
     height:100vh;
-    background-image: linear-gradient(to right bottom, rgb(38, 77, 115), rgb(0, 0, 0)), linear-gradient(transparent, rgb(0, 0, 0) 70%);
+    background-image: linear-gradient(to right bottom, rgb(83, 125, 167), rgb(0, 0, 0)), linear-gradient(transparent, rgb(0, 0, 0) 70%);
      overflow:hidden; 
     margin:0;
   }
